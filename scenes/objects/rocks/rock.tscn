@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bcpjaqxihy7q1"]
+
+[ext_resource type="Texture2D" uid="uid://idbqjapbrq2j" path="res://assets/game/objects/basic_grass_biom_things.png" id="1_70ahf"]
+[ext_resource type="Script" uid="uid://bb10lp8f1mn82" path="res://scenes/objects/rocks/rock.gd" id="2_f5itc"]
+[ext_resource type="PackedScene" uid="uid://cv3a2aheo5om8" path="res://scenes/components/hurt_component.tscn" id="2_msy0l"]
+[ext_resource type="Shader" uid="uid://brq6rgle7j63b" path="res://scenes/objects/shake.gdshader" id="3_bntui"]
+[ext_resource type="Script" uid="uid://buu68g2cg22k0" path="res://scenes/components/damage_component.gd" id="3_f5itc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bntui"]
+resource_local_to_scene = true
+shader = ExtResource("3_bntui")
+shader_parameter/shake_intensity = 0.0
+shader_parameter/shake_speed = 20.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aw33s"]
+atlas = ExtResource("1_70ahf")
+region = Rect2(128, 16, 16, 16)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8i8v8"]
+shader = ExtResource("3_bntui")
+shader_parameter/shake_intensity = 19.0
+shader_parameter/shake_speed = 20.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bntui"]
+size = Vector2(14, 11.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8i8v8"]
+size = Vector2(12, 11.5)
+
+[node name="Rock" type="Sprite2D" unique_id=1669013320]
+material = SubResource("ShaderMaterial_bntui")
+texture = SubResource("AtlasTexture_aw33s")
+offset = Vector2(0, -3)
+script = ExtResource("2_f5itc")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1215290743]
+material = SubResource("ShaderMaterial_8i8v8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=101535447]
+position = Vector2(0, -3.25)
+shape = SubResource("RectangleShape2D_bntui")
+
+[node name="HurtComponent" parent="." unique_id=288880369 instance=ExtResource("2_msy0l")]
+tool = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtComponent" unique_id=1964098473]
+position = Vector2(0, -3.25)
+shape = SubResource("RectangleShape2D_8i8v8")
+debug_color = Color(0.928128, 0.08488073, 0.6263392, 0.41960785)
+
+[node name="DamageComponent" type="Node2D" parent="." unique_id=1364460848]
+script = ExtResource("3_f5itc")
+max_damage = 4
+metadata/_custom_type_script = "uid://buu68g2cg22k0"

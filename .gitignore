@@ -1,0 +1,5 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+gemini.md
+PROJECT_STATUS.md
