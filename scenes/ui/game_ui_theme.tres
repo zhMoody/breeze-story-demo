@@ -1,0 +1,103 @@
+[gd_resource type="Theme" format=3 uid="uid://chcbl2vw654h0"]
+
+[ext_resource type="Texture2D" uid="uid://crwa0hpcywsyw" path="res://assets/ui/basic_ui_sprites.png" id="1_adgln"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3jcj"]
+atlas = ExtResource("1_adgln")
+region = Rect2(201, 105, 30, 30)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s48se"]
+texture = SubResource("AtlasTexture_n3jcj")
+texture_margin_left = 7.0
+texture_margin_top = 7.0
+texture_margin_right = 7.0
+texture_margin_bottom = 7.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_adgln"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s48se"]
+atlas = SubResource("CompressedTexture2D_adgln")
+region = Rect2(11, 11, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0e78g"]
+texture = SubResource("AtlasTexture_s48se")
+texture_margin_left = 4.0
+texture_margin_top = 4.365601
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(0, 0, 26, 28)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ldxi4"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7g77n"]
+atlas = SubResource("CompressedTexture2D_ldxi4")
+region = Rect2(11, 59, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rv0s5"]
+texture = SubResource("AtlasTexture_7g77n")
+texture_margin_left = 4.0
+texture_margin_top = 4.365601
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(0, 0, 26, 28)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5vukp"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64m7q"]
+atlas = SubResource("CompressedTexture2D_5vukp")
+region = Rect2(11, 107, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c7jou"]
+texture = SubResource("AtlasTexture_64m7q")
+texture_margin_left = 4.0
+texture_margin_top = 4.365601
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(0, 0, 26, 28)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a4fyc"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7r1q7"]
+atlas = SubResource("CompressedTexture2D_a4fyc")
+region = Rect2(11, 155, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lx2c1"]
+texture = SubResource("AtlasTexture_7r1q7")
+texture_margin_left = 4.0
+texture_margin_top = 4.365601
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(0, 0, 26, 28)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yea8o"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h071u"]
+atlas = SubResource("CompressedTexture2D_yea8o")
+region = Rect2(11, 59, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tn8rj"]
+texture = SubResource("AtlasTexture_h071u")
+texture_margin_left = 4.0
+texture_margin_top = 4.365601
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(0, 0, 26, 28)
+
+[resource]
+DarkWoodPanel/base_type = &"PanelContainer"
+DarkWoodPanel/styles/panel = SubResource("StyleBoxTexture_s48se")
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+ToolButton/base_type = &"Button"
+ToolButton/styles/disabled = SubResource("StyleBoxTexture_0e78g")
+ToolButton/styles/focus = SubResource("StyleBoxTexture_rv0s5")
+ToolButton/styles/hover = SubResource("StyleBoxTexture_c7jou")
+ToolButton/styles/normal = SubResource("StyleBoxTexture_lx2c1")
+ToolButton/styles/pressed = SubResource("StyleBoxTexture_tn8rj")
