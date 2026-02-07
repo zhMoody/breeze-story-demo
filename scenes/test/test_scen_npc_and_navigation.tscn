@@ -49,7 +49,6 @@ tile_set = ExtResource("1_52tf3")
 
 [node name="Player" parent="." unique_id=655257458 instance=ExtResource("2_ue1ag")]
 position = Vector2(364, 339)
-current_tool = 0
 
 [node name="Chickens" type="Node2D" parent="." unique_id=474304839]
 
@@ -93,7 +92,7 @@ navigation_layers = 2
 
 [node name="Cattle" parent="Cattles" unique_id=2011831586 instance=ExtResource("4_ue1ag")]
 z_index = 1
-position = Vector2(475, 194)
+position = Vector2(456, 203)
 
 [node name="Cattle2" parent="Cattles" unique_id=853305428 instance=ExtResource("4_ue1ag")]
 z_index = 1

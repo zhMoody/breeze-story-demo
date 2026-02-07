@@ -22,11 +22,12 @@ config/icon="res://icon.svg"
 [autoload]
 
 ToolManager="*uid://c10hf5kji5xfs"
+InventoryManager="*uid://bysdm31skais6"
 
 [display]
 
-window/size/viewport_width=853
-window/size/viewport_height=480
+window/size/viewport_width=900
+window/size/viewport_height=585
 window/size/window_width_override=1706
 window/size/window_height_override=960
 window/stretch/mode="canvas_items"
@@ -34,7 +35,7 @@ window/stretch/scale_mode="integer"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/godot-vim/plugin.cfg")
 
 [file_customization]
 
